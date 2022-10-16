@@ -64,7 +64,6 @@ func main() {
 		log.Printf("(delivery) order %v delivered", order.Id)
 	})
 
-	// time.Sleep(60 * time.Minute)
 	for {
 	}
 }
