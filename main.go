@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	nc, err := nats.Connect("nats://" + os.Getenv("NATS_HOST") + ":" + os.Getenv("NATS_PORT"))
+	nc, err := nats.Connect("nats://nats:" + os.Getenv("NATS_PORT"))
 	if err != nil {
 		log.Printf("unable to connect to NATS: %v", err)
 	}
